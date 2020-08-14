@@ -1,0 +1,10 @@
+test_delete_tags:
+  - {method: UsersManage.get_tags}  # 获取标签
+  - {path: "$..tag[?(@.name==${name})]", extract: before}  # 拿到标签并赋值给before
+  - {method: delete, conditions: xx}
+  - {method: get }
+  - {extract: path1, name: size_before}
+  - {method: add}
+  - {method: get}
+  - {extract: path3, name: size_after}
+  - {assertion: size_after==size_before}

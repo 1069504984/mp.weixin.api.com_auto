@@ -1,0 +1,38 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+
+create_tags:  # 创建标签
+  method: post
+  url: ${url}/cgi-bin/tags/create
+  params:
+    access_token: ${token}
+  headers:
+    *headers
+  proxies:
+  verify:
+  json:
+    tag:
+      name: ${name}
+
+get_tags:  # 获取标签
+  method: get
+  url: ${url}/cgi-bin/tags/get
+  params:
+    access_token: ${token}
+  headers:
+  proxies:
+  verify:
+  json:
+
+delete_tags:  # 删除标签
+  method: post
+  url: ${url}/cgi-bin/tags/delete
+  params:
+    access_token: ${token}
+  headers:
+    *headers
+  proxies:
+  verify:
+  json:
+      tag:
+        id: ${id}

@@ -1,0 +1,26 @@
+test_token:
+  - # 正向流程
+    - XXX
+    - XXX
+    - expires_in
+    - 7200
+  - # appid为空
+    - ''
+    - XXX
+    - errcode
+    - 41002
+  - # appid不存在
+    - XXX
+    - XXX
+    - errcode
+    - 40013
+  - # secret为空
+    - XXX
+    - ''
+    - errcode
+    - 41004
+  - # secret不存在
+    - XXX
+    - XXX
+    - errcode
+    - 40125
