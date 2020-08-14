@@ -14,7 +14,10 @@
     testcase：用例
     run：执行用例集并生成报告
 ## 数据驱动
-个人觉得数据驱动是个难点，所以就由浅入深，分别写了三个py文件：get_token.py、users_manage.py，分别对应：
+个人觉得数据驱动是个难点，所以就由浅入深，分别写了三个接口：
+test_get_token.py::test_token、
+users_manage.py::test_delete_tags、
+users_manage.py::test_delete_tags_step，分别对应：
 * 1、用例驱动，,通过@pytest.mark.parametrize()调用，yaml文件如下
 ```yaml
 test_token:  # 获取token
