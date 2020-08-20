@@ -22,13 +22,13 @@ users_manage.py::test_delete_tags_step，分别对应：
 ```yaml
 test_token:  # 获取token
   - # 正向流程
-    - wx422b3fb553d5a8
-    - 57ca66df4e85bf7a7cd5837862027
+    - wx422b3fb558
+    - 57ca66df4e85bf7a7cd5827
     - expires_in
     - 7200
   - # appid为空
     - ''
-    - 57ca66df4e85bf7a7cd5637862027
+    - 57ca66df4e85bf7a7cd2027
     - errcode
     - 41002
 ```
